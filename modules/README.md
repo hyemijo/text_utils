@@ -1,0 +1,14 @@
+# Module Description
+- get_word_freq.py: 문장에서 단어들의 빈도 집계
+- get_bigram_freq.py: 주어진 txt에서 (1)어절단위의 bi-gram과 (2)음절단위의 bi-gram에 대한 빈도수를 추출 후, bi-gram에 대한 빈도수를 역순으로 정렬
+- get_ngram_freq.py: 어절(word) 혹은 음절(char) 단위의 N-gram 출력
+- sub_text_by_pattern.py: 주어진 txt에서 2개 초과로 반복되는 문자들을(예.aaa) 대문자 1개로(예.A) 치환
+- sub_text_by_dict.py: 주어진 문자열을 pl사전에 나오는 key의 value로 치환
+- sub_text_practice.py: 문자열 치환 연습
+  - 패턴 기반: 사전 없이 정규표현식으로 표현된 규칙을 적용해서 문자열을 치환할 때 사용
+  - 사전 기반: 용어사전 등 자료를 기준으로 문자열을 치환할 때 사용
+- get_longest_matching.py: 주어진 pl(dict)과 src(str)를 사용하여 longest matching 구현
+- extract_bijectives.py: 병렬코퍼스 기반 기초통계량 집계 & 일대다 대응 관계인 항목 대상 빈도표 출력
+- get_ngram_prob.py: 주어진 코퍼스에서 tri-gram 범위에서 특정 문자열 다음에 나올 수 있는 어절들을 확률이 높은 순으로 나열
+- detect_loanwords.py: 차용어 탐지기. 표준국어대사전 데이터 기반 외래어와 고유어의 음소배열제약을 음절 기반 ngram으로 모델링, 확률 집계
+- refine_tag.py: br, li, p 태그를 제외한 html 태그 정제
